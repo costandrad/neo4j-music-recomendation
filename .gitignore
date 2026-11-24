@@ -1,0 +1,116 @@
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Cache e arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+
+# Distribuição e build
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Type checking e lint
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ==========================================
+# NEO4J
+# ==========================================
+
+# Bancos de dados e transações
+# data/
+# databases/
+# transactions/
+
+# Logs
+logs/
+*.log
+
+# Dumps e backups
+*.dump
+*.backup
+*.backup.*
+
+# Importações e exportações locais
+import/
+export/
+
+# ==========================================
+# CONFIGURAÇÕES E SEGREDOS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# Certificados e chaves privadas
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==========================================
+# IDEs E EDITORES
+# ==========================================
+
+# VS Code
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+
+# Positron
+.positron/
+
+# ==========================================
+# SISTEMA OPERACIONAL
+# ==========================================
+
+# Linux
+*~
+.Trash-*/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
