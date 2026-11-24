@@ -62,7 +62,7 @@ FOR (g:Tag) REQUIRE g.name IS UNIQUE;
 
 ### Carga das músicas, artitas e tags
 
-``cypher
+```cypher
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/costandrad/neo4j-music-recomendation/refs/heads/main/data/sample-music-info.csv' AS row
 WITH row
 WHERE row.track_id IS NOT NULL AND trim(row.track_id) <> ''
@@ -91,7 +91,7 @@ MERGE (tag:Tag {name: cleanTag})
 MERGE (t)-[:HAS_TAG]->(tag);
 ```
 
-### Carga de uauários
+### Carga de usuários
 
 ```cypher
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/costandrad/neo4j-music-recomendation/refs/heads/main/data/sample-music-info.csv' AS row
